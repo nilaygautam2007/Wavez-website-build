@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../server/config/seed.js"],"names":[],"mappings":"AAAA;;;;;AAKA","file":"seed.js","sourcesContent":["/**\n * Populate DB with sample data on server start\n * to disable, edit config/environment/index.js, and set `seedDB: false`\n */\n\n'use strict';\n\n"]}
