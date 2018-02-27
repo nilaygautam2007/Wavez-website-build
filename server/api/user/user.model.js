@@ -248,10 +248,10 @@ UserSchema.methods = {
     var salt = new Buffer(this.salt, 'base64');
 
     if (!callback) {
-      return _crypto2.default.pbkdf2Sync(password, salt, defaultIterations, defaultKeyLength).toString('base64');
+      return _crypto2.default.pbkdf2Sync(password, salt, defaultIterations, defaultKeyLength).  toString('base64');
     }
 
-    return _crypto2.default.pbkdf2(password, salt, defaultIterations, defaultKeyLength, function (err, key) {
+    return _crypto2.default.pbkdf2(password, salt, defaultIterations, defaultKeyLength, 'sha1', function (err, key) {
       if (err) {
         callback(err);
       } else {

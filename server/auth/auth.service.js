@@ -82,7 +82,7 @@ function hasRole(roleRequired) {
     if (_environment2.default.userRoles.indexOf(req.user.role) >= _environment2.default.userRoles.indexOf(roleRequired)) {
       next();
     } else {
-      res.status(403).send('Forbidden');
+      res.status(403).send('Forbiddenyay');
     }
   });
 }
